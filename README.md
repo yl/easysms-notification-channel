@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-$ composer require leonis/laravel-notification-easysms
+$ composer require leonis/easysms-notification-channel
 ```
 
 ## 配置
