@@ -34,10 +34,14 @@ class EasySmsChannelServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/easysms.php', 'easysms');
 
         $this->app->singleton(EasySms::class, function () {
-            $easySms = new EasySms(config('easysms'));
-            $easySms->extend('errorlog', function ($gatewayConfig) {
-                return new ErrorLogGateway($gatewayConfig);
-            });
+            $config = config('easysms');
+            $easySms = new EasySms($config);
+
+            foreach ($config['custom_gateways'] as $name => $gateway) {
+                $easySms->extend($name, function ($gatewayConfig) use ($gateway) {
+                    return new $gateway($gatewayConfig);
+                });
+            }
 
             return $easySms;
         });

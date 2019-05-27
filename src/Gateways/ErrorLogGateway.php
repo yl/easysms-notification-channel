@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Leonis\Notifications\EasySms;
+namespace Leonis\Notifications\EasySms\Gateways;
 
 use Illuminate\Support\Facades\Log;
 use Overtrue\EasySms\Contracts\MessageInterface;
