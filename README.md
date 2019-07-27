@@ -40,8 +40,8 @@ $ composer require leonis/easysms-notification-channel
     use Illuminate\Notifications\Notification;
     use Illuminate\Contracts\Queue\ShouldQueue;
     use Illuminate\Notifications\Messages\MailMessage;
-    use Leonis\Notifications\Channels\EasySmsChannel;
-    use Leonis\Notifications\Messages\EasySmsMessage;
+    use Leonis\Notifications\EasySms\Channels\EasySmsChannel;
+    use Leonis\Notifications\EasySms\Messages\EasySmsMessage;
 
     class VerificationCode extends Notification
     {
