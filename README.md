@@ -1,6 +1,6 @@
 # EasySms Notification Channel for Laravel
 
-使用 easy-sms 发送 Laravel 消息通知。
+使用 [overtrue/easy-sms](https://github.com/overtrue/easy-sms) 发送 Laravel 消息通知。
 
 ## 安装
 
