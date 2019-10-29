@@ -105,4 +105,4 @@ $ composer require leonis/easysms-notification-channel
 
 ## License
 
-MIT
+[MIT](https://github.com/yl/easysms-notification-channel/blob/master/LICENSE)
