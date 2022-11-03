@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-$ composer require leonis/easysms-notification-channel
+composer require leonis/easysms-notification-channel
 ```
 
 ## 配置
@@ -22,7 +22,7 @@ $ composer require leonis/easysms-notification-channel
 2. 创建配置文件：
 
     ```shell
-    $ php artisan vendor:publish --provider="Leonis\Notifications\EasySms\EasySmsChannelServiceProvider"
+    php artisan vendor:publish --provider="Leonis\Notifications\EasySms\EasySmsChannelServiceProvider"
     ```
     
 3. 修改应用根目录下的 config/easysms.php 中对应的参数即可。
